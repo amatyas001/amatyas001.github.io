@@ -1,7 +1,7 @@
 {
   "name": "amatyas001.github.io",
   "author": "Mátyás Angyal <amatyas001@gmail.com>",
-  "homepage": "http://amatyas001.github.io/build",
+  "homepage": "https://amatyas001.github.io",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -14,7 +14,7 @@
   },
   "scripts": {
     "predeploy": "react-scripts build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -b master -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
