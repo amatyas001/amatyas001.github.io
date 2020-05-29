@@ -1,11 +1,37 @@
 @font-face
   font-family: 'Raleway'
-  src: url('/assets/fonts/Raleway-Regular.ttf') format('truetype')
+  src: url('/assets/fonts/Raleway-SemiBold.ttf') format('truetype')
 
 @font-face
   font-family: 'Oswald'
-  src: url('/assets/fonts/Oswald-Regular.ttf') format('truetype')
+  src: url('/assets/fonts/Oswald-Bold.ttf') format('truetype')
 
-$default-background: "/assets/image/main_background.jpg"
-$default-font: 'Oswald', sans-serif
+@mixin p-text($color, $bg)
+  &
+    background-color: #333
+    position: relative
+    line-height: 1
+    color: #fff
+    display: inline
+    white-space: pre-wrap
+    border: 0 solid #333
+    border-width: 0.25em 0
+
+  &:after
+    background-color: #333
+    content: ""
+    position: absolute
+    top: -0.25em
+    right: 100%
+    bottom: -0.25em
+    width: 0.25em
+
+  & > span
+    position: relative
+    z-index: 1
+
+$default-background: "/assets/image/3rd_background.jpg"
+$primary-font: 'Oswald', sans-serif
+$secondary-font: 'Raleway', sans-serif
 $navbar-height: 50px
+$link-color: rgba(170, 64, 0, 1)
